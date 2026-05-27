@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+jupyterlab
+notebook
+nbconvert
+ipykernel
+# Prefer installing RDKit via conda-forge; pip RDKit packages can be platform-sensitive.
+rdkit
