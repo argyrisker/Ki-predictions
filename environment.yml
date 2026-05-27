@@ -1,0 +1,16 @@
+name: apb-ki-modelling
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - rdkit
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - jupyterlab
+  - notebook
+  - nbconvert
+  - pip
+  - pip:
+      - ipykernel
