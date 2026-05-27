@@ -3,11 +3,11 @@
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![RDKit](https://img.shields.io/badge/RDKit-cheminformatics-informational)
 ![scikit--learn](https://img.shields.io/badge/scikit--learn-ML-informational)
-![Status](https://img.shields.io/badge/status-reproducible%20exam%20project-success)
+![Status](https://img.shields.io/badge/status-reproducible%20portfolio%20project-success)
 
 A reproducible Applied Pharmaceutical Bioinformatics project for modelling molecular binding affinity from SMILES strings. The target is `Ki (nM)`, transformed to `log10(Ki)` for regression and thresholded for activity classification.
 
-This is written to be readable by a PhD admissions reviewer: it shows chemical curation, descriptor engineering, model comparison, reproducibility, and a sober discussion of validation limits. It does **not** pretend that random cross-validation proves prospective drug-discovery performance.
+The repository is structured as a code-first PhD-application portfolio project: clean source modules, reproducible environment files, a runnable smoke check, and a notebook workflow. It avoids inflated claims: random cross-validation is useful internal validation, not proof of prospective drug-discovery performance.
 
 ## Portfolio summary
 
@@ -25,12 +25,10 @@ This is written to be readable by a PhD admissions reviewer: it shows chemical c
 
 ```text
 .
-├── data/                         # dataset location; large/full data supplied separately if absent
-├── notebooks/                    # original Ki modelling notebook
+├── data/                         # example data; full exam dataset can be added locally
+├── notebooks/                    # notebook workflow location
 ├── src/apb_ki_modelling/         # reusable cleaning and descriptor code
 ├── scripts/                      # smoke check and notebook execution helpers
-├── reports/                      # exam and model-result summaries
-├── results/                      # extracted result tables
 ├── environment.yml
 ├── requirements.txt
 ├── pyproject.toml
@@ -101,7 +99,7 @@ mamba activate apb-ki-modelling
 make smoke
 ```
 
-Run the notebook:
+Run the notebook after adding it to `notebooks/Ki_modelling.ipynb`:
 
 ```bash
 make notebook
