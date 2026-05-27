@@ -109,12 +109,6 @@ make notebook
 
 Random 10-fold cross-validation after duplicate aggregation is acceptable for an exam project, but it can still leak analogue-series information across folds. A research-grade next step would use Bemis-Murcko scaffold splitting, external validation, uncertainty estimates, and error analysis by chemical series.
 
-## Application framing
-
-A strong way to describe this project in PhD applications:
-
-> Built a reproducible RDKit/scikit-learn workflow for modelling molecular Ki values from SMILES, including molecular standardisation, duplicate aggregation, multi-family descriptor generation, cross-validated regression/classification, and descriptor ablation. The project emphasises methodological transparency and explicitly discusses scaffold-leakage risk in random validation.
-
 ## Data note
 
 The dataset was supplied for an exam project. The code is reusable; dataset reuse outside the course context may require checking the original data rights.
