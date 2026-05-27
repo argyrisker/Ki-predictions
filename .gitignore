@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.env
+.venv/
+env/
+venv/
+.conda/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+
+# Large/generated model artefacts
+models/
+*.pkl
+*.joblib
+*.npy
+*.npz
+
+# Keep curated result CSVs, but ignore ad hoc rerun debris
+results/tmp/
+results/*.html
